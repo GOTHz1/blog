@@ -8,11 +8,10 @@
 # 系统启动流程
 
 linux内核启动（）：
-`start_kernel`(common/arch/arm/kernel/head-common.S)
+`start_kernel`(common/arch/arm/kernel/head-common.S)  
 ->`start_kernel(void)`(common/init/main.c 同下)  
 ->`rest_init(void)`  
-
-->`kernel_init(void *unused)`:找init进程  
+->`kernel_init(void *unused)`:寻找init进程  
 ->`run_init_process(void *unused)`  
 ->`kernel_execve()`:内核空间调用用户空间的应用程序
 
